@@ -1,0 +1,13 @@
+{% extends hola_mundo/base.html %}
+
+{%block titulo%} listado de mascota {%end block%}
+
+{%block listado%}
+<ul>
+    {% for mascota in mascota %}
+    <li>
+        {{ mascota }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

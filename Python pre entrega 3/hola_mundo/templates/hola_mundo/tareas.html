@@ -1,0 +1,13 @@
+{% extends hola_mundo/base.html %}
+
+{%block titulo%} listado de tareas {%end block%}
+
+{% block listado %}
+<ul>
+    {% for tareas in tareas %}
+    <li>
+        {{ tarea.nombre }} - {{ tarea.creado_el }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

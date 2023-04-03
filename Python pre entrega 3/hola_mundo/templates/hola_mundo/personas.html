@@ -1,0 +1,15 @@
+{% extends hola_mundo/base.html %}
+
+{%block titulo%} listado de personas {%end block%}
+
+{%block listado%}
+<ul>
+    {% for personas in personas %}
+    <li>
+        {{ persona }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block title %} total: {{total_personas}} {% endblock %}
